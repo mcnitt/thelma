@@ -35,7 +35,7 @@ const underdot = new Underdot({
     }),
     postcss([autoprefixer]),
     srcset({presets: srcsetPresets}),
-    cname('thelma.gh.l43.co'),
+    cname('thelmacorlessdikeman.com'),
     bust(),
     svgo({
       plugins: [
