@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background-color);
+}
+
+body {
+  margin: 1rem;
+  padding: $site-padding;
+  background: var(--body-background-color);
+  @include small {
+    margin: 0.25rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: $site-max-width;
+  margin: 0 auto;
+}

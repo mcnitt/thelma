@@ -1,0 +1,40 @@
+//    0            medium-breakpoint   large-breakpoint           ∞
+//    |                   |                   |                   |
+//    |[[[[[[ small ]]]]]]|                   |                   |
+//    |                   |[[[[[[ medium ]]]]]|                   |
+//    |                   |                   |[[[[[[ large ]]]]]]|
+//    |[[[[[[[[[[ small-and-medium ]]]]]]]]]]]|                   |
+//    |                   |[[[[[[[[[[ medium-and-large ]]]]]]]]]]]|
+//    |                   |                   |                   |
+
+
+
+@mixin small {
+  @media (max-width: $medium-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: $medium-breakpoint) and (max-width: $large-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $large-breakpoint) {
+    @content;
+  }
+}
+
+@mixin small-and-medium {
+  @media (max-width: $large-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin medium-and-large {
+  @media (min-width: $medium-breakpoint) {
+    @content;
+  }
+}

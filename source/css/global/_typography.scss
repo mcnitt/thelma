@@ -1,0 +1,95 @@
+// ======
+// global
+// ======
+
+html {
+  font-size: $font-size;
+  color: var(--primary-text-color);
+  font-family: var(--serif);
+  line-height: 1.4;
+}
+
+body {
+  font-size: 0.9rem;
+}
+
+
+
+// ========
+// elements
+// ========
+
+
+a {
+  cursor: pointer;
+  color: var(--link-color);
+  &:hover, &.active {
+    color: var(--link-color-hover);
+  }
+}
+
+p, ul, ol {
+  margin: 1.3em 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+  font-family: var(--sans);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.6em;
+  @include small {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  margin: 2em 0 0.25em;
+  font-size: 1.5em;
+  @include small {
+    font-size: 1.25em;
+  }
+  small {
+    display: block;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+}
+
+h3 {
+  margin: 1.5em 0 0;
+  font-size: 1.15em;
+  @include small {
+    font-size: 1em;
+  }
+}
+
+h4 {
+  margin: 0.5em 0 0;
+  font-size: inherit;
+}
+
+blockquote {
+  float: right;
+  width: 16rem;
+  padding: 0 0 0 0.75rem;
+  margin: 1.3rem 0 1rem 1.5rem;
+  clear: both;
+  border-left: 7px solid var(--background-color);
+  font-weight: bold;
+  @include small {
+    display: none;
+  }
+}
+
+
+
+// ==============
+// helper classes
+// ==============
+
+.center-text {
+  text-align: center;
+}

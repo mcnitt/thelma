@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  padding: 10% 0;
+  @include medium-and-large {
+    font-size: 1.1rem;
+  }
+}
+
+.gallery {
+  .image {
+    margin-top: $grid-gutter / 2;
+    margin-bottom: $grid-gutter / 2;
+    a {
+      display: block;
+      height: 0;
+      padding: 50%; // make square
+      background-size: cover;
+      background-position: center;
+      border-radius: 0.25rem;
+      &:hover {
+        transform: scale(0.99);
+      }
+    }
+  }
+}

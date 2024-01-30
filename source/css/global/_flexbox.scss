@@ -1,0 +1,29 @@
+// ==================================
+// helper classes for flexbox layouts
+// ==================================
+
+.center-align {
+  display: flex;
+  align-items: center;
+}
+
+.center-justify {
+  display: flex;
+  justify-content: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}

@@ -1,0 +1,51 @@
+// =========
+// variables
+// =========
+
+$medium-breakpoint: 700px;
+$large-breakpoint: 1000px;
+
+$font-size: 20px;
+
+$site-max-width: 45rem;
+$site-padding: 1rem;
+
+$grid-columns: 12;
+$grid-gutter: 1.5rem;
+
+$blue: #0000ff;
+$gray: #333;
+$black: #222;
+
+:root {
+
+  --primary-text-color: #{$gray};
+  --link-color: #{$blue};
+  --link-color-hover: #{darken($blue, 25%)};
+  --heading-color: #{$black};
+  --background-color: #efebe8;
+  --body-background-color: #fff;
+
+  --serif: serif;
+  --sans: sans-serif;
+
+}
+
+
+
+// =======
+// imports
+// =======
+
+@import 'global/utilities';
+@import 'global/media-queries';
+@import 'global/layout';
+@import 'global/flexbox';
+@import 'global/typography';
+@import 'global/forms';
+@import 'global/utilities';
+@import 'global/grid';
+
+@import 'pages/home';
+
+@import 'global/media-query-classes'; // See this file for an explanation of why it's imported last
