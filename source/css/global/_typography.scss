@@ -74,13 +74,15 @@ h4 {
 blockquote {
   float: right;
   width: 16rem;
+  max-width: 100%;
   padding: 0 0 0 0.75rem;
   margin: 1.3rem 0 1rem 1.5rem;
   clear: both;
   border-left: 7px solid var(--background-color);
   font-weight: bold;
   @include small {
-    display: none;
+    float: none;
+    margin-left: 0;
   }
 }
 
