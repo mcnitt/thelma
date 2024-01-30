@@ -13,14 +13,14 @@ $site-padding: 1rem;
 $grid-columns: 12;
 $grid-gutter: 1.5rem;
 
-$blue: #0000ff;
+$blue: #5656ef;
 $gray: #333;
 $black: #222;
 
 :root {
 
   --primary-text-color: #{$gray};
-  --link-color: #{$blue};
+  --link-color: inherit;
   --link-color-hover: #{darken($blue, 25%)};
   --heading-color: #{$black};
   --background-color: #efebe8;

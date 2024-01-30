@@ -1,7 +1,7 @@
 :root {
   --primary-text-color: #333;
-  --link-color: #0000ff;
-  --link-color-hover: navy;
+  --link-color: inherit;
+  --link-color-hover: #1111b4;
   --heading-color: #222;
   --background-color: #efebe8;
   --body-background-color: #fff;
@@ -584,6 +584,14 @@ header {
 }
 .gallery .image a:hover {
   transform: scale(0.99);
+}
+
+footer {
+  margin: 2rem 0;
+  text-align: center;
+}
+footer p {
+  margin: 2rem 0;
 }
 
 @media (min-width: 700px) {
